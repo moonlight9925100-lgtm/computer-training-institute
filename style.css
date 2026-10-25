@@ -1,0 +1,405 @@
+/* =========================================================
+   1. UNIVERSAL SELECTOR & BOX MODEL REQUIREMENT
+   ========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   2. ELEMENT SELECTORS (Font Family, Font Size, Color, Background)
+   ========================================================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1e293b;
+    background-color: #f8fafc;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* =========================================================
+   3. GROUP SELECTORS
+   ========================================================= */
+h1, h2, h3 {
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: left;
+    border: 1px solid #cbd5e1;
+}
+
+/* =========================================================
+   4. ID SELECTORS (#main-header, #hero-banner, #course-table, etc.)
+   ========================================================= */
+#main-header {
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 4px solid #2563eb;
+}
+
+#hero-banner {
+    /* Background Image with dark overlay gradient */
+    background: linear-gradient(rgba(15, 23, 42, 0.82), rgba(30, 58, 138, 0.85)),
+                url('images/image1.jpg') center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+#course-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+
+#contact-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    flex: 2;
+}
+
+#main-footer {
+    background-color: #0f172a;
+    color: #cbd5e1;
+    margin-top: 50px;
+    padding-top: 35px;
+    border-top: 4px solid #2563eb;
+}
+
+/* =========================================================
+   5. CLASS SELECTORS, DISPLAY PROPERTY & HOVER EFFECTS
+   ========================================================= */
+.logo-container h1 {
+    font-size: 26px;
+    color: #60a5fa;
+}
+
+.tagline {
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f8fafc;
+    font-size: 15px;
+    padding: 8px 14px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.25s ease;
+}
+
+/* Hover Effect on Navigation Links */
+.navbar a:hover,
+.navbar a.active {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.hero-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 28px;
+    color: #e2e8f0;
+}
+
+/* Buttons & Hover Effects */
+.btn-primary,
+.btn-secondary,
+.btn-submit {
+    display: inline-block;
+    padding: 12px 26px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 6px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: 2px solid #2563eb;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #ffffff;
+    color: #0f172a;
+}
+
+/* Main Container & Section Headings (Text Alignment, Margin, Padding) */
+.container {
+    max-width: 1150px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #475569;
+    margin-bottom: 35px;
+}
+
+.sub-heading {
+    font-size: 22px;
+    margin: 30px 0 15px;
+    color: #1e3a8a;
+}
+
+/* =========================================================
+   6. STYLED TABLES (Main Concept for Roll No. 40)
+   ========================================================= */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+#course-table thead tr {
+    background-color: #1e3a8a;
+    color: #ffffff;
+}
+
+#course-table tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+#course-table tbody tr:hover {
+    background-color: #dbeafe;
+}
+
+/* =========================================================
+   7. STYLED LISTS REQUIREMENT
+   ========================================================= */
+.highlights-box {
+    background-color: #ffffff;
+    border-left: 5px solid #2563eb;
+    padding: 25px 30px;
+    margin-top: 25px;
+    border-radius: 6px;
+    border-top: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.highlights-box h3 {
+    color: #1e3a8a;
+    margin-bottom: 14px;
+}
+
+.feature-list {
+    list-style-type: square;
+    padding-left: 22px;
+}
+
+.feature-list li,
+.steps-list li {
+    margin-bottom: 10px;
+    color: #334155;
+}
+
+.steps-list {
+    padding-left: 22px;
+}
+
+/* =========================================================
+   8. IMAGE GALLERY (6 Images Grid & Box Model)
+   ========================================================= */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-card {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.333% - 14px);
+    min-width: 280px;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.gallery-caption {
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+    color: #1e293b;
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* =========================================================
+   9. ABOUT & CONTACT LAYOUTS
+   ========================================================= */
+.about-grid {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.about-card {
+    flex: 1;
+    min-width: 280px;
+    background-color: #ffffff;
+    padding: 25px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+.about-card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-info-box {
+    flex: 1;
+    min-width: 280px;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.contact-info-box h3 {
+    margin-bottom: 18px;
+    color: #93c5fd;
+}
+
+.contact-info-box p {
+    margin-bottom: 16px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.btn-submit {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    margin: 0;
+}
+
+.btn-submit:hover {
+    background-color: #1e40af;
+}
+
+/* =========================================================
+   10. FOOTER STYLING
+   ========================================================= */
+.footer-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-col h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    color: #93c5fd;
+    text-decoration: none;
+    margin-right: 14px;
+    padding: 5px 0;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.copyright-bar {
+    background-color: #020617;
+    text-align: center;
+    padding: 14px;
+    font-size: 14px;
+}
