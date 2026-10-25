@@ -26,5 +26,5 @@ A simple multi-page website for a computer training institute, built as a BCA 1s
 
 ## Author
 
-[chandni kumari]
+Chandni kumari
 BCA 1st Year
